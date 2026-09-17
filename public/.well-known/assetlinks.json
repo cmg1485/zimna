@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.zimna_eta.twa",
+        "sha256_cert_fingerprints": ["6A:03:8C:A8:D1:4F:11:FE:2D:05:92:FD:43:80:86:7F:D1:F8:D0:FA:D0:55:2D:86:89:9C:F0:C7:C9:9D:0E:E2"]
+      }
+    }]
