@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00a896"/>
+      <stop offset="100%" stop-color="#0f4642"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="60%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Outer Celestial Ring -->
+  <circle cx="256" cy="256" r="185" fill="none" stroke="#fcd34d" stroke-width="8" opacity="0.85" stroke-dasharray="6 12" />
+
+  <!-- 12 Astronomical Hour Marks -->
+  <g stroke="#fef08a" stroke-width="4" stroke-linecap="round" opacity="0.75">
+    <line x1="256" y1="52" x2="256" y2="70"/>
+    <line x1="256" y1="442" x2="256" y2="460"/>
+    <line x1="52" y1="256" x2="70" y2="256"/>
+    <line x1="442" y1="256" x2="460" y2="256"/>
+    <line x1="112" y1="112" x2="124" y2="124"/>
+    <line x1="400" y1="400" x2="388" y2="388"/>
+    <line x1="112" y1="400" x2="124" y2="388"/>
+    <line x1="400" y1="112" x2="388" y2="124"/>
+  </g>
+
+  <!-- Golden Sun Core -->
+  <circle cx="256" cy="265" r="88" fill="url(#sunGrad)" filter="url(#glow)"/>
+
+  <!-- Celestial Horizon Curve -->
+  <path d="M 120 320 Q 256 360 392 320" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.95"/>
+
+  <!-- Sun Rays Radiating Upwards -->
+  <g stroke="#fde047" stroke-width="5" stroke-linecap="round" opacity="0.9">
+    <line x1="256" y1="140" x2="256" y2="162"/>
+    <line x1="180" y1="172" x2="195" y2="190"/>
+    <line x1="332" y1="172" x2="317" y2="190"/>
+    <line x1="135" y1="230" x2="157" y2="238"/>
+    <line x1="377" y1="230" x2="355" y2="238"/>
+  </g>
+
+  <!-- Clock Hands (Indicating Astronomical Time / Zman) -->
+  <g stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="256" y1="265" x2="256" y2="310" stroke-width="9"/>
+    <line x1="256" y1="265" x2="315" y2="265" stroke-width="7"/>
+    <circle cx="256" cy="265" r="8" fill="#ffffff"/>
+  </g>
+</svg>
