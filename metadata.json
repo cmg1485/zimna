@@ -1,0 +1,10 @@
+{
+  "name": "Zman",
+  "description": "A premium alarm clock and guide for Jewish daily halachic times (Zmanim) like Shema, Shkia, and Chatzos. Get notified in advance, snooze or share active alarms, and learn deep halachic definitions.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
